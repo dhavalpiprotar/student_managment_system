@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="en">
+    <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Profile | CampusFlow</title><link rel="stylesheet" href="../assets/style.css">
+    </head><body><div class="layout"><aside class="sidebar"><div class="brand">Campus<span>Flow</span></div>
+        <div class="nav-label">Workspace</div><a class="nav-link " href="dashboard.html">
+            <span class="ico">▦</span>Home</a><a class="nav-link active" href="profile.html">
+                <span class="ico">♙</span>My Profile</a><a class="nav-link " href="courses.html">
+                    <span class="ico">▣</span>My Courses</a><a class="nav-link " href="records.html">
+                        <span class="ico">◷</span>Attendance & Results</a><a class="nav-link" href="login.html">
+                            <span class="ico">↪</span>Logout</a></aside><main class="main"><header class="topbar">
+                                <div><strong>My Profile</strong><br><small>Student Management System</small></div>
+                                <div class="user"><div class="avatar">ST</div>Student</div></header><section class="content">
+<div class="heading"><div><h1>My Profile</h1><div class="muted">View and update your personal information.</div>
+</div>
+</div>
+<div class="card"><div class="course" style="margin-bottom:24px"><div class="avatar" style="width:62px;height:62px;font-size:22px">AS</div>
+<div><h3 style="margin:0 0 5px">Aarav Shah</h3><p class="muted" style="margin:0">Student ID: STU001 · BCA Semester 4</p>
+</div></div><form class="form-grid" onsubmit="demoSubmit(event,'Profile updated (demo).')"><div class="field">
+    <label>Full name</label><input value="Aarav Shah"></div><div class="field">
+        <label>Email</label><input type="email" value="aarav@email.com"></div>
+        <div class="field"><label>Phone</label><input value="+91 98765 43210">
+        </div><div class="field"><label>Course</label><input value="BCA" disabled>
+        </div><div class="field"><label>Semester</label><input value="4" disabled>
+        </div><div class="field"><label>Date of birth</label><input type="date" value="2005-04-12">
+        </div><div class="field full"><button class="btn">Update profile</button>
+        </div>
+    </form>
+</div>
+</section></main>
+</div>
+<script src="../assets/app.js">
+    </script>
+    </body>
+    </html>

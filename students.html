@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en">
+    <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Management | CampusFlow</title><link rel="stylesheet" href="../assets/style.css">
+    </head><body>
+        <div class="layout"><aside class="sidebar"><div class="brand">Campus<span>Flow</span></div>
+            <div class="nav-label">Workspace</div><a class="nav-link " href="dashboard.html">
+                <span class="ico">▦</span>Dashboard</a><a class="nav-link active" href="students.html">
+                    <span class="ico">♙</span>Students</a><a class="nav-link " href="management.html">
+                        <span class="ico">▣</span>Teachers & Courses</a><a class="nav-link " href="records.html">
+                            <span class="ico">◷</span>Attendance / Fees / Results</a><a class="nav-link" href="login.html">
+                                <span class="ico">↪</span>Logout</a></aside><main class="main"><header class="topbar"><div>
+                                    <strong>Student Management</strong><br><small>Student Management System</small></div>
+                                    <div class="user"><div class="avatar">AD</div>Administrator</div></header><section class="content">
+<div class="heading"><div><h1>Student Management</h1><div class="muted">Add, search and manage student records.</div>
+</div><button class="btn" onclick="document.getElementById('addStudent').scrollIntoView({behavior:'smooth'})">＋ Add Student</button>
+</div>
+<div class="toolbar"><input id="studentSearch" class="search" placeholder="Search student..." oninput="doSearch('studentSearch','studentTable')">
+    <select class="search"><option>All semesters</option><option>Semester 1</option><option>Semester 2</option>
+        <option>Semester 3</option></select></div>
+<div class="table-wrap"><table id="studentTable"><thead><tr><th>Student ID</th><th>Name</th><th>Email</th>
+    <th>Course</th><th>Semester</th><th>Status</th><th>Action</th></tr></thead>
+    <tbody>
+<tr><td>STU001</td><td>Aarav Shah</td><td>aarav@email.com</td><td>BCA</td><td>4</td><td><span class="status">Active</span>
+</td><td><button class="btn red" onclick="removeRow(this)">Delete</button></td></tr>
+<tr><td>STU002</td><td>Diya Patel</td><td>diya@email.com</td><td>B.Tech</td><td>2</td><td><span class="status">Active</span>
+</td><td><button class="btn red" onclick="removeRow(this)">Delete</button></td></tr>
+<tr><td>STU003</td><td>Rohan Mehta</td><td>rohan@email.com</td><td>BBA</td><td>3</td><td><span class="status pending">Pending</span>
+</td><td><button class="btn red" onclick="removeRow(this)">Delete</button></td></tr>
+</tbody></table></div>
+<div class="card" id="addStudent" style="margin-top:20px">
+    <h3 class="section-title">Add new student</h3>
+    <form class="form-grid" onsubmit="demoSubmit(event,'Student added (demo). Connect a database to save permanently.')">
+        <div class="field"><label>Student ID</label>
+            <input required placeholder="e.g. STU004"></div>
+            <div class="field"><label>Student Name</label>
+                <input required placeholder="Full name"></div>
+                <div class="field"><label>Email</label>
+                    <input type="email" required placeholder="student@email.com"></div>
+                    <div class="field"><label>Course</label><select><option>BCA</option><option>B.Tech</option>
+                        <option>BBA</option></select></div><div class="field"><label>Semester</label><select>
+                            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                            <option>6</option></select></div><div class="field"><label>Phone</label><input placeholder="Phone number">
+                            </div><div class="field full"><button class="btn">Save Student</button></div></form>
+                        </div></section>
+                    </main>
+                </div>
+                <script src="../assets/app.js">
+                </script>
+                </body>
+                </html>
